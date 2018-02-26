@@ -23,9 +23,9 @@ clear
 #CONFIGURANDO SQUID E SARG
 	rm /var/www/html/index.html
 	rm /etc/squid3/squid.conf
-	wget http://follem.cloud/script/squid3_manager/squid.conf -O /etc/squid3/squid.conf
+	wget https://raw.githubusercontent.com/CAPIM/RagProxy/master/squid.conf -O /etc/squid3/squid.conf
 	rm /etc/sarg/sarg.conf
-	wget http://follem.cloud/script/squid3_manager/sarg.conf -O /etc/sarg/sarg.conf
+	wget https://raw.githubusercontent.com/CAPIM/RagProxy/master/sarg.conf -O /etc/sarg/sarg.conf
 	squid3 -k reconfigure
 	sarg
 	clear
